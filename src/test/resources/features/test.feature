@@ -1,6 +1,6 @@
 Feature: Test feature
-    This test will run by navigating to 
-    Log in the test account
+    This test will run by navigating to skywritersaas.com
+    Log in the test account (ilabtest.ilabtest)
     Create a new contact
 
     Scenario: Click google chrome icon
@@ -17,6 +17,3 @@ Feature: Test feature
     
     Scenario: Input new contact data
     Given New contact, input information
-    
-    # Scenario: Go "crazy" with the mouse
-    # Given I go crazy with the mouse
