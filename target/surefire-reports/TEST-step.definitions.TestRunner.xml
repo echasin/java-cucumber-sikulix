@@ -1,211 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="step.definitions.TestRunner" time="35" errors="5" skipped="0">
+<testsuite tests="5" failures="0" name="step.definitions.TestRunner" time="39.819" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
-    <property name="java.vm.version" value="25.181-b13"/>
-    <property name="gopherProxySet" value="false"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/erchasin/github/skywriter/java-cucumber-sikulix"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\GitHub\java-cucumber-sikulix"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/erchasin/github/skywriter/java-cucumber-sikulix"/>
-    <property name="java.runtime.version" value="1.8.0_181-b13"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/b3/g50867d52c36cj9ktx32fsj9cdwm10/T/"/>
+    <property name="user.dir" value="C:\GitHub\java-cucumber-sikulix"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\BRYANT~1\AppData\Local\Temp\2\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/erchasin/homebrew/Cellar/maven/3.6.1/libexec/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/erchasin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/Users/erchasin/homebrew/Cellar/maven/3.6.1/libexec/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows Server 2012 R2"/>
+    <property name="classworlds.conf" value="C:\Users\bryant_a_ademiluyi\java-cucumber-sikulix\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3402696246673940381.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_211/bin/server;C:/Program Files/Java/jre1.8.0_211/bin;C:/Program Files/Java/jre1.8.0_211/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_211\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\GooGet;C:\Program Files\Google\Compute Engine\metadata_scripts;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\Google\Compute Engine\sysprep;C:\Program Files\Java\jdk1.8.0_211/bin;C:\apache-maven-3.6.1-bin\apache-maven-3.6.1\bin;C:\Program Files\PostgreSQL\11\bin;C:\Users\bryant_a_ademiluyi\AppData\Local\GitHubDesktop\bin;C:\Users\bryant_a_ademiluyi\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.13.6"/>
-    <property name="library.jansi.path" value="/Users/erchasin/homebrew/Cellar/maven/3.6.1/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/erchasin"/>
-    <property name="user.timezone" value="America/Los_Angeles"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\bryant_a_ademiluyi"/>
+    <property name="user.timezone" value="GMT"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="erchasin"/>
-    <property name="java.class.path" value="/Users/erchasin/homebrew/Cellar/maven/3.6.1/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="bryant_a_ademiluyi"/>
+    <property name="java.class.path" value="C:\Users\bryant_a_ademiluyi\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.11.0.20190220-2117\jars\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_181"/>
-    <property name="java.ext.dirs" value="/Users/erchasin/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/erchasin/homebrew/Cellar/maven/3.6.1/libexec"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="C:\GitHub\java-cucumber-sikulix\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Test feature" name="Click google chrome icon" time="5.7">
-    <error message="chromeicon.png: (56x34) in S(0)[0,0 2560x1080] E:Y, T:3.0" type="FindFailed">FindFailed: chromeicon.png: (56x34) in S(0)[0,0 2560x1080] E:Y, T:3.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Open_googleChrome(DesktopSteps.java:27)
-	at ✽.I click on the google chrome icon(src/test/resources/features/test.feature:7)
-</error>
-    <system-out>Feature: Test feature
-    This test will run by navigating to 
-    Log in the test account
-    Create a new contact
-
-  Scenario: Click google chrome icon        &amp;#27;[90m# src/test/resources/features/test.feature:6&amp;#27;[0m
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mI click on the google chrome icon&amp;#27;[0m &amp;#27;[90m# DesktopSteps.Open_googleChrome()&amp;#27;[0m
-      &amp;#27;[31mFindFailed: chromeicon.png: (56x34) in S(0)[0,0 2560x1080] E:Y, T:3.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Open_googleChrome(DesktopSteps.java:27)
-	at ✽.I click on the google chrome icon(src/test/resources/features/test.feature:7)
-&amp;#27;[0m
-</system-out>
-    <system-err>Jun 10, 2019 12:41:09 PM step.definitions.Hooks takeScreenshotIfFailed
-INFO: Screenshot written for failed scenario to: target/reports/Click google chrome icon.png
-</system-err>
-  </testcase>
-  <testcase classname="Test feature" name="Navigate to skywritersaas.com" time="11.842">
-    <error message="skywriter.png: (312x130) in S(0)[0,0 2560x1080] E:Y, T:5.0" type="FindFailed">FindFailed: skywriter.png: (312x130) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at step.definitions.DesktopSteps.Navigate_to_skywriter(DesktopSteps.java:34)
-	at ✽.Enter skywritersaas.com into url search bar(src/test/resources/features/test.feature:10)
-</error>
-    <system-out>
-  Scenario: Navigate to skywritersaas.com             &amp;#27;[90m# src/test/resources/features/test.feature:9&amp;#27;[0m
-[log]  TYPE &quot;prod.skywritersaas.com#ENTER.&quot;
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mEnter skywritersaas.com into url search bar&amp;#27;[0m &amp;#27;[90m# DesktopSteps.Navigate_to_skywriter()&amp;#27;[0m
-      &amp;#27;[31mFindFailed: skywriter.png: (312x130) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at step.definitions.DesktopSteps.Navigate_to_skywriter(DesktopSteps.java:34)
-	at ✽.Enter skywritersaas.com into url search bar(src/test/resources/features/test.feature:10)
-&amp;#27;[0m
-</system-out>
-    <system-err>Jun 10, 2019 12:41:21 PM step.definitions.Hooks takeScreenshotIfFailed
-INFO: Screenshot written for failed scenario to: target/reports/Navigate to skywritersaas.com.png
-</system-err>
-  </testcase>
-  <testcase classname="Test feature" name="Login to account" time="5.565">
-    <error message="username.png: (147x37) in S(0)[0,0 2560x1080] E:Y, T:5.0" type="FindFailed">FindFailed: username.png: (147x37) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Login_account(DesktopSteps.java:41)
-	at ✽.Use pre-existing credentials to login to account(src/test/resources/features/test.feature:13)
-</error>
-    <system-out>
-  Scenario: Login to account                               &amp;#27;[90m# src/test/resources/features/test.feature:12&amp;#27;[0m
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mUse pre-existing credentials to login to account&amp;#27;[0m &amp;#27;[90m# DesktopSteps.Login_account()&amp;#27;[0m
-      &amp;#27;[31mFindFailed: username.png: (147x37) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Login_account(DesktopSteps.java:41)
-	at ✽.Use pre-existing credentials to login to account(src/test/resources/features/test.feature:13)
-&amp;#27;[0m
-</system-out>
-    <system-err>Jun 10, 2019 12:41:26 PM step.definitions.Hooks takeScreenshotIfFailed
-INFO: Screenshot written for failed scenario to: target/reports/Login to account.png
-</system-err>
-  </testcase>
-  <testcase classname="Test feature" name="Create new Contact" time="5.704">
-    <error message="audienceicon.png: (46x36) in S(0)[0,0 2560x1080] E:Y, T:5.0" type="FindFailed">FindFailed: audienceicon.png: (46x36) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:55)
-	at ✽.New contact navigation(src/test/resources/features/test.feature:16)
-</error>
-    <system-out>
-  Scenario: Create new Contact   &amp;#27;[90m# src/test/resources/features/test.feature:15&amp;#27;[0m
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mNew contact navigation&amp;#27;[0m &amp;#27;[90m# DesktopSteps.Navigate_newContact()&amp;#27;[0m
-      &amp;#27;[31mFindFailed: audienceicon.png: (46x36) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:55)
-	at ✽.New contact navigation(src/test/resources/features/test.feature:16)
-&amp;#27;[0m
-</system-out>
-    <system-err>Jun 10, 2019 12:41:32 PM step.definitions.Hooks takeScreenshotIfFailed
-INFO: Screenshot written for failed scenario to: target/reports/Create new Contact.png
-</system-err>
-  </testcase>
-  <testcase classname="Test feature" name="Input new contact data" time="6.189">
-    <error message="firstname.png: (130x27) in S(0)[0,0 2560x1080] E:Y, T:5.0" type="FindFailed">FindFailed: firstname.png: (130x27) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:67)
-	at ✽.New contact, input information(src/test/resources/features/test.feature:19)
-</error>
-    <system-out>
-  Scenario: Input new contact data       &amp;#27;[90m# src/test/resources/features/test.feature:18&amp;#27;[0m
-    &amp;#27;[31mGiven &amp;#27;[0m&amp;#27;[31mNew contact, input information&amp;#27;[0m &amp;#27;[90m# DesktopSteps.newContact_info()&amp;#27;[0m
-      &amp;#27;[31mFindFailed: firstname.png: (130x27) in S(0)[0,0 2560x1080] E:Y, T:5.0
-  Line 2782, in file Region.java
-
-	at org.sikuli.script.Region.wait(Region.java:2782)
-	at org.sikuli.script.Region.find(Region.java:2329)
-	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
-	at org.sikuli.script.Region.click(Region.java:3736)
-	at step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:67)
-	at ✽.New contact, input information(src/test/resources/features/test.feature:19)
-&amp;#27;[0m
-</system-out>
-    <system-err>Jun 10, 2019 12:41:38 PM step.definitions.Hooks takeScreenshotIfFailed
-INFO: Screenshot written for failed scenario to: target/reports/Input new contact data.png
-</system-err>
-  </testcase>
+  <testcase classname="Test feature" name="Click google chrome icon" time="11.171"/>
+  <testcase classname="Test feature" name="Navigate to skywritersaas.com" time="9.309"/>
+  <testcase classname="Test feature" name="Login to account" time="3.799"/>
+  <testcase classname="Test feature" name="Create new Contact" time="4.133"/>
+  <testcase classname="Test feature" name="Input new contact data" time="11.407"/>
 </testsuite>
