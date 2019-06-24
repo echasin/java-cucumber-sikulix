@@ -12,6 +12,9 @@ formatter.scenario({
 formatter.before({
   "status": "passed"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "I click on the google chrome icon",
   "keyword": "Given "
@@ -29,6 +32,9 @@ formatter.scenario({
   "name": "Navigate to skywritersaas.com",
   "description": "",
   "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.before({
   "status": "passed"
@@ -54,6 +60,9 @@ formatter.scenario({
 formatter.before({
   "status": "passed"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "Use pre-existing credentials to login to account",
   "keyword": "Given "
@@ -75,6 +84,9 @@ formatter.scenario({
 formatter.before({
   "status": "passed"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "New contact navigation",
   "keyword": "Given "
@@ -83,7 +95,8 @@ formatter.match({
   "location": "DesktopSteps.Navigate_newContact()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "FindFailed: audienceicon.png: (46x36) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:156)\r\n\tat ✽.New contact navigation(src/test/resources/features/test.feature:16)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"
@@ -96,6 +109,9 @@ formatter.scenario({
 formatter.before({
   "status": "passed"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "New contact, input information",
   "keyword": "Given "
@@ -104,7 +120,8 @@ formatter.match({
   "location": "DesktopSteps.newContact_info()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "FindFailed: firstname.png: (130x27) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:169)\r\n\tat ✽.New contact, input information(src/test/resources/features/test.feature:19)\r\n",
+  "status": "failed"
 });
 formatter.after({
   "status": "passed"

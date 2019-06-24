@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: step.definitions.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.152 sec
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 39.344 sec <<< FAILURE!
+Create new Contact(Test feature)  Time elapsed: 5.901 sec  <<< ERROR!
+FindFailed: audienceicon.png: (46x36) in S(0)[0,0 1280x800] E:Y, T:5.0
+  Line 2782, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2782)
+	at org.sikuli.script.Region.find(Region.java:2329)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
+	at org.sikuli.script.Region.click(Region.java:3736)
+	at step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:156)
+	at ?.New contact navigation(src/test/resources/features/test.feature:16)
+
+Input new contact data(Test feature)  Time elapsed: 5.461 sec  <<< ERROR!
+FindFailed: firstname.png: (130x27) in S(0)[0,0 1280x800] E:Y, T:5.0
+  Line 2782, in file Region.java
+
+	at org.sikuli.script.Region.wait(Region.java:2782)
+	at org.sikuli.script.Region.find(Region.java:2329)
+	at org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)
+	at org.sikuli.script.Region.click(Region.java:3736)
+	at step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:169)
+	at ?.New contact, input information(src/test/resources/features/test.feature:19)
+

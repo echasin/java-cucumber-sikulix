@@ -1,24 +1,66 @@
 package step.definitions;
 
-import org.sikuli.script.*; 
-import config.SikuliConfiguration; 
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.util.logging.Logger;
+
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
+import org.sikuli.script.Region;
+import org.sikuli.script.Screen;
+
+import config.SikuliConfiguration;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-
-import java.time.*;
-import java.util.Calendar;
-import java.util.TimeZone;
-import java.util.logging.Logger;
-import java.security.Timestamp;
-import java.text.SimpleDateFormat;
-import java.time.*;
+import cucumber.api.Scenario;
 
 public class DesktopSteps {
-
-    private Screen screen;
+	
+	//Establish Database Connection
+	String url = "jdbc:postgresql://localhost:5432/persons";
+	String user = "postgres";
+	String password = "admin";
+	Connection conn = null;
+	
+	
+	private Screen screen;
     public Key key;
     Logger logger = Logger.getLogger(Hooks.class.getName());
-    String timeStamp = new SimpleDateFormat("MM.dd.yyyy_HH:mm:ss:ms").format(new java.util.Date());
+   
+    //String timeStamp = new SimpleDateFormat("MM.dd.yyyy_HH:mm:ss:ms").format(new java.util.Date());
+    @Before
+    public void setDbConfig() throws Exception {
+    	System.out.println("setDbConfig() ");
+    	try {	
+    		conn = DriverManager.getConnection(url, user, password);
+    		System.out.println("Postres Connection Successful");
+    	}catch (Exception e) {
+    		System.out.println("Postres Connection Failed");
+    	
+    	}
+        
+    }
+    
+    public void logevent(String featureFile, String scenario, Timestamp startTime, Timestamp endTime)  {
+    	
+    	try {	
+    		System.out.println("Print to Postres");
+    		PreparedStatement st = conn.prepareStatement("INSERT INTO EVENTLOG ( featureFile, scenario, startTime, endTime) VALUES(?,?,?,?)");
+    		st.setString(1, featureFile);
+    		st.setString(2, scenario);
+    		st.setTimestamp(3, startTime);
+    		st.setTimestamp(4, endTime);
+    	}catch (Exception e) {
+    		System.out.println("Postres Connection: Exception");
+    	
+    	}
+        
+    }
+    
     public void exitApplication (Screen screen) throws FindFailed {
         screen.keyDown(key.ALT);
         screen.keyDown(key.F4);
@@ -36,17 +78,61 @@ public class DesktopSteps {
     @Given("^I click on the google chrome icon$")
     public void Open_googleChrome() throws Throwable {
         screen.click("chromeicon.png", 10);
-        screen.wait("identifier.png", 10);
+        Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
         
-        System.out.println(timeStamp);		//Timestamp
+        
+        try {
+        	screen = new Screen();
+        	screen.wait("identifier.png", 10); 	
+        	date= new Date();
+     		 	time = date.getTime();
+     		 	endts = new Timestamp(time);
+     		  //System.out.println("Event Status: " + scenario.getName());
+     		 	System.out.println("Event End Time Stamp: " + endts);
+        	 	
+        	}
+        	catch(Exception e) {
+        		 System.out.println("Event Status: Exception");
+        		 date= new Date();
+        		 time = date.getTime();
+        		 endts = new Timestamp(time);
+        	   System.out.println("Event End Time Stamp: " + endts);
+        	}
+        	logevent("featureFile", "scenario", startts, endts);
+        
     }
 
     @Given("^Enter skywritersaas.com into url search bar$")
     public void Navigate_to_skywriter() throws Throwable {
     	screen.type(null, "prod.skywritersaas.com\n", 0);
-        screen.wait("skywriter.png", 10);
         
-        System.out.println(timeStamp);		//Timestamp
+        Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        System.out.println("Event Start Time Stamp: " + startts);
+        
+        
+        try {
+        	screen = new Screen();
+        	screen.wait("skywriter.png", 10); 	
+        	date= new Date();
+     		 	time = date.getTime();
+     		 	Timestamp endts = new Timestamp(time);
+     		  //System.out.println("Event Status: " + scenario.getName());
+     		 	System.out.println("Event End Time Stamp: " + endts);
+        	 	
+        	}
+        	catch(Exception e) {
+        		 System.out.println("Event Status: Exception");
+        		 date= new Date();
+        		 time = date.getTime();
+        		 Timestamp endts = new Timestamp(time);
+        	   System.out.println("Event End Time Stamp: " + endts);
+        	}
 
     }
     
@@ -58,7 +144,7 @@ public class DesktopSteps {
     	screen.type(null, "34Simple12", 0);
     	screen.click("login.png", 0);
 
-    	System.out.println(timeStamp);		//Timestamp
+    	//System.out.println(timeStamp);		//Timestamp
 
 
     }
@@ -71,7 +157,7 @@ public class DesktopSteps {
         screen.click("contacts.png", 0);
 		r1 .click("add.png");
 
-		System.out.println(timeStamp);		//Timestamp
+		//System.out.println(timeStamp);		//Timestamp
 
 
     }
@@ -103,15 +189,9 @@ public class DesktopSteps {
         
         screen.click("nextbutton.png", 0);
         
-        System.out.println(timeStamp);		//Timestamp
+        //System.out.println(timeStamp);		//Timestamp
 
-      //  ZonedDateTime receivedTimestamp = some_ts_value;
-      //  Timestamp ts = new Timestamp(receivedTimestamp.toInstant().toEpochMilli());
-     //   ps.setTimestamp(
-      //     1, 
-      //     ts, 
-      //     Calendar.getInstance(TimeZone.getTimeZone(receivedTimestamp.getZone()))
-     //   );
+      
 
 
     }

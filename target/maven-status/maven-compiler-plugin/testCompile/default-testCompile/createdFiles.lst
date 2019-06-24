@@ -1,0 +1,3 @@
+step\definitions\Hooks.class
+step\definitions\DesktopSteps.class
+step\definitions\TestRunner.class

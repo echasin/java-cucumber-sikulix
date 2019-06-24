@@ -1,17 +1,19 @@
 package step.definitions;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import helpers.ConfigManager;
-import org.apache.commons.configuration.ConfigurationException;
-import org.sikuli.script.Screen;
-
-import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import javax.imageio.ImageIO;
+
+import org.apache.commons.configuration.ConfigurationException;
+import org.sikuli.script.Screen;
+
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
+import helpers.ConfigManager;
 
 
 public class Hooks {
