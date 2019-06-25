@@ -14,9 +14,9 @@ import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
 
 import config.SikuliConfiguration;
+import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
-import cucumber.api.Scenario;
 
 public class DesktopSteps {
 	
@@ -49,13 +49,15 @@ public class DesktopSteps {
     	
     	try {	
     		System.out.println("Print to Postres");
-    		PreparedStatement st = conn.prepareStatement("INSERT INTO EVENTLOG ( featureFile, scenario, startTime, endTime) VALUES(?,?,?,?)");
+    		PreparedStatement st = conn.prepareStatement("INSERT INTO public.\"EVENTLOG\" ( featurefile, scenario, starttime, endtime) VALUES(?,?,?,?)");
     		st.setString(1, featureFile);
     		st.setString(2, scenario);
     		st.setTimestamp(3, startTime);
     		st.setTimestamp(4, endTime);
+    		st.executeUpdate();
+    		st.close();
     	}catch (Exception e) {
-    		System.out.println("Postres Connection: Exception");
+    		System.out.println("Postres Connection: Exception"  + e) ;
     	
     	}
         
@@ -102,7 +104,7 @@ public class DesktopSteps {
         		 endts = new Timestamp(time);
         	   System.out.println("Event End Time Stamp: " + endts);
         	}
-        	logevent("featureFile", "scenario", startts, endts);
+        	logevent("featureFile_3", "scenario", startts, endts);
         
     }
 

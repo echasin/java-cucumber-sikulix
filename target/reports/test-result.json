@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 170158095,
+              "duration": 177006890,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 1463608007,
+              "duration": 1535108165,
               "status": "passed"
             },
             "match": {
@@ -30,7 +30,7 @@
         "after": [
           {
             "result": {
-              "duration": 391480,
+              "duration": 256486,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7303146126,
+              "duration": 12091802160,
               "status": "passed"
             },
             "line": 7,
@@ -59,7 +59,7 @@
         "before": [
           {
             "result": {
-              "duration": 2731896637,
+              "duration": 501225875,
               "status": "passed"
             },
             "match": {
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1751650,
+              "duration": 10147743,
               "status": "passed"
             },
             "match": {
@@ -83,7 +83,7 @@
         "after": [
           {
             "result": {
-              "duration": 145234,
+              "duration": 129873,
               "status": "passed"
             },
             "match": {
@@ -96,7 +96,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10982592897,
+              "duration": 21007582878,
               "status": "passed"
             },
             "line": 10,
@@ -112,7 +112,7 @@
         "before": [
           {
             "result": {
-              "duration": 29158002,
+              "duration": 122880320,
               "status": "passed"
             },
             "match": {
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 3734649,
+              "duration": 2965189,
               "status": "passed"
             },
             "match": {
@@ -136,7 +136,7 @@
         "after": [
           {
             "result": {
-              "duration": 96823,
+              "duration": 457840551,
               "status": "passed"
             },
             "match": {
@@ -149,8 +149,9 @@
         "steps": [
           {
             "result": {
-              "duration": 4241387336,
-              "status": "passed"
+              "error_message": "FindFailed: username.png: (147x37) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.Login_account(DesktopSteps.java:143)\r\n\tat ✽.Use pre-existing credentials to login to account(src/test/resources/features/test.feature:13)\r\n",
+              "duration": 5757138448,
+              "status": "failed"
             },
             "line": 13,
             "name": "Use pre-existing credentials to login to account",
@@ -165,7 +166,7 @@
         "before": [
           {
             "result": {
-              "duration": 25459197,
+              "duration": 301477800,
               "status": "passed"
             },
             "match": {
@@ -174,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 1477008,
+              "duration": 1379255,
               "status": "passed"
             },
             "match": {
@@ -189,7 +190,7 @@
         "after": [
           {
             "result": {
-              "duration": 514327636,
+              "duration": 316930299,
               "status": "passed"
             },
             "match": {
@@ -202,8 +203,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "FindFailed: audienceicon.png: (46x36) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:156)\r\n\tat ✽.New contact navigation(src/test/resources/features/test.feature:16)\r\n",
-              "duration": 5347014632,
+              "error_message": "FindFailed: audienceicon.png: (46x36) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.Navigate_newContact(DesktopSteps.java:158)\r\n\tat ✽.New contact navigation(src/test/resources/features/test.feature:16)\r\n",
+              "duration": 5567964042,
               "status": "failed"
             },
             "line": 16,
@@ -219,7 +220,7 @@
         "before": [
           {
             "result": {
-              "duration": 19417566,
+              "duration": 186382381,
               "status": "passed"
             },
             "match": {
@@ -228,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 1326189,
+              "duration": 1257761,
               "status": "passed"
             },
             "match": {
@@ -243,7 +244,7 @@
         "after": [
           {
             "result": {
-              "duration": 342174437,
+              "duration": 349646528,
               "status": "passed"
             },
             "match": {
@@ -256,8 +257,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "FindFailed: firstname.png: (130x27) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:169)\r\n\tat ✽.New contact, input information(src/test/resources/features/test.feature:19)\r\n",
-              "duration": 5060917179,
+              "error_message": "FindFailed: firstname.png: (130x27) in S(0)[0,0 1280x800] E:Y, T:5.0\n  Line 2782, in file Region.java\n\r\n\tat org.sikuli.script.Region.wait(Region.java:2782)\r\n\tat org.sikuli.script.Region.find(Region.java:2329)\r\n\tat org.sikuli.script.Region.getLocationFromTarget(Region.java:3238)\r\n\tat org.sikuli.script.Region.click(Region.java:3736)\r\n\tat step.definitions.DesktopSteps.newContact_info(DesktopSteps.java:171)\r\n\tat ✽.New contact, input information(src/test/resources/features/test.feature:19)\r\n",
+              "duration": 5410784817,
               "status": "failed"
             },
             "line": 19,
