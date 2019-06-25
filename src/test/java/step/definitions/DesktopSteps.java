@@ -85,7 +85,7 @@ public class DesktopSteps {
         Timestamp startts = new Timestamp(time);
         Timestamp endts = null;
         System.out.println("Event Start Time Stamp: " + startts);
-        
+        //System.out.println("Event Status: " + scenario.getName());
         
         try {
         	screen = new Screen();
@@ -104,7 +104,7 @@ public class DesktopSteps {
         		 endts = new Timestamp(time);
         	   System.out.println("Event End Time Stamp: " + endts);
         	}
-        	logevent("featureFile_3", "scenario", startts, endts);
+        	logevent("featureFile_7", "scenario", startts, endts);
         
     }
 
@@ -115,6 +115,7 @@ public class DesktopSteps {
         Date date= new Date();
         long time = date.getTime();
         Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
         System.out.println("Event Start Time Stamp: " + startts);
         
         
@@ -123,7 +124,7 @@ public class DesktopSteps {
         	screen.wait("skywriter.png", 10); 	
         	date= new Date();
      		 	time = date.getTime();
-     		 	Timestamp endts = new Timestamp(time);
+     		 	endts = new Timestamp(time);
      		  //System.out.println("Event Status: " + scenario.getName());
      		 	System.out.println("Event End Time Stamp: " + endts);
         	 	
@@ -132,10 +133,10 @@ public class DesktopSteps {
         		 System.out.println("Event Status: Exception");
         		 date= new Date();
         		 time = date.getTime();
-        		 Timestamp endts = new Timestamp(time);
+        		 endts = new Timestamp(time);
         	   System.out.println("Event End Time Stamp: " + endts);
         	}
-
+        	logevent("featureFile_8", "scenario", startts, endts);
     }
     
     @Given("^Use pre-existing credentials to login to account$")
