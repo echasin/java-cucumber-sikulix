@@ -30,6 +30,7 @@ public class DesktopSteps {
 	private Screen screen;
     public Key key;
     Logger logger = Logger.getLogger(Hooks.class.getName());
+	private Scenario scenario;
    
     //String timeStamp = new SimpleDateFormat("MM.dd.yyyy_HH:mm:ss:ms").format(new java.util.Date());
     @Before
@@ -76,10 +77,18 @@ public class DesktopSteps {
         SikuliConfiguration.setSikuliSettings();
         
     }
+    
+    @Before
+    public void scenario(Scenario scenario) throws Exception {
+        this.scenario = scenario;
+        
+    }
 
     @Given("^I click on the google chrome icon$")
     public void Open_googleChrome() throws Throwable {
-        screen.click("chromeicon.png", 10);
+        
+    	System.out.println("Scenario: " + scenario.getName());
+    	screen.click("chromeicon.png", 10);
         Date date= new Date();
         long time = date.getTime();
         Timestamp startts = new Timestamp(time);
@@ -95,7 +104,7 @@ public class DesktopSteps {
      		 	endts = new Timestamp(time);
      		  //System.out.println("Event Status: " + scenario.getName());
      		 	System.out.println("Event End Time Stamp: " + endts);
-        	 	
+     		 	logevent("featureFile_9", "scenario", startts, endts);
         	}
         	catch(Exception e) {
         		 System.out.println("Event Status: Exception");
@@ -104,7 +113,7 @@ public class DesktopSteps {
         		 endts = new Timestamp(time);
         	   System.out.println("Event End Time Stamp: " + endts);
         	}
-        	logevent("featureFile_7", "scenario", startts, endts);
+        	//logevent("featureFile_7", "scenario", startts, endts);
         
     }
 
