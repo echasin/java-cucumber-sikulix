@@ -1,3 +1,2 @@
-config\dbWrite.class
 helpers\ConfigManager.class
 config\SikuliConfiguration.class
