@@ -15,8 +15,11 @@ Feature: Test feature
     Scenario: Login to account
     Given Use pre-existing credentials to login to account
     
-    Scenario: Create new Contact
-    Given New contact navigation
+    Scenario: Iterate through Contacts
+    Given Iterate through Contacts
     
-    Scenario: Input new contact data
-    Given New contact, input information
+#    Scenario: Create new Contact
+#    Given New contact navigation
+    
+#    Scenario: Input new contact data
+ #   Given New contact, input information

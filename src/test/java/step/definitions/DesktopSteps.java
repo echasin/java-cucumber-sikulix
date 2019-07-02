@@ -7,11 +7,15 @@ import java.sql.PreparedStatement;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.logging.Logger;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.sikuli.script.FindFailed;
 import org.sikuli.script.Key;
 import org.sikuli.script.Region;
 import org.sikuli.script.Screen;
+import org.sikuli.script.*;
+import org.sikuli.basics.Debug;
 
 import config.SikuliConfiguration;
 import cucumber.api.Scenario;
@@ -104,7 +108,7 @@ public class DesktopSteps {
      		 	endts = new Timestamp(time);
      		  //System.out.println("Event Status: " + scenario.getName());
      		 	System.out.println("Event End Time Stamp: " + endts);
-     		 	logevent("featureFile_9", "scenario", startts, endts);
+     		 	logevent("featureFile_a", scenario.getName(), startts, endts);
         	}
         	catch(Exception e) {
         		 System.out.println("Event Status: Exception");
@@ -119,8 +123,9 @@ public class DesktopSteps {
 
     @Given("^Enter skywritersaas.com into url search bar$")
     public void Navigate_to_skywriter() throws Throwable {
+    	
+    	System.out.println("Scenario: " + scenario.getName());
     	screen.type(null, "prod.skywritersaas.com\n", 0);
-        
         Date date= new Date();
         long time = date.getTime();
         Timestamp startts = new Timestamp(time);
@@ -136,7 +141,8 @@ public class DesktopSteps {
      		 	endts = new Timestamp(time);
      		  //System.out.println("Event Status: " + scenario.getName());
      		 	System.out.println("Event End Time Stamp: " + endts);
-        	 	
+     		 	logevent("featureFile_b", scenario.getName(), startts, endts);
+     		 	
         	}
         	catch(Exception e) {
         		 System.out.println("Event Status: Exception");
@@ -145,7 +151,7 @@ public class DesktopSteps {
         		 endts = new Timestamp(time);
         	   System.out.println("Event End Time Stamp: " + endts);
         	}
-        	logevent("featureFile_8", "scenario", startts, endts);
+        	//logevent("featureFile_8", "scenario", startts, endts);
     }
     
     @Given("^Use pre-existing credentials to login to account$")
@@ -155,13 +161,113 @@ public class DesktopSteps {
     	screen.click("password.png", 0);
     	screen.type(null, "34Simple12", 0);
     	screen.click("login.png", 0);
-
-    	//System.out.println(timeStamp);		//Timestamp
+    	System.out.println("Scenario: " + scenario.getName());
+    	Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
+        
+        
+    	try {
+        	 	
+        		date= new Date();
+     		 	time = date.getTime();
+     		 	endts = new Timestamp(time);
+     		  //System.out.println("Event Status: " + scenario.getName());
+     		 	System.out.println("Event End Time Stamp: " + endts);
+     		 	logevent("featureFile_c", scenario.getName(), startts, endts);
+        	}
+        	catch(Exception e) {
+        		 System.out.println("Event Status: Exception");
+        		 date= new Date();
+        		 time = date.getTime();
+        		 endts = new Timestamp(time);
+        	   System.out.println("Event End Time Stamp: " + endts);
+        	}
 
 
     }
     
-    @Given("^New contact navigation$")
+    @Given("^Iterate through Contacts$")
+    public void Navigate_throughContacts() throws Throwable {
+    	
+    	screen.click("audienceicon.png", 0);
+        screen.click("contacts.png", 0);
+		//r1 .click("add.png");
+        System.out.println("Scenario: " + scenario.getName());
+    	Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
+		
+        try {
+        	
+        	screen = new Screen();
+        	screen.wait("contactlist.png", 10);
+        	
+        	List<Object> imageList = new ArrayList<Object>();
+        	imageList.add("ilabtest1.png");
+        	imageList.add("ilabtest2.png");
+        	imageList.add("ilabtest3.png");
+        	imageList.add("ilabtest4.png");
+        	//imageList.add("ilabTestContact.png");
+		  
+		 date= new Date();
+		 time = date.getTime();
+		 endts = new Timestamp(time);
+		 System.out.println("Event End Time Stamp: " + endts);
+		 //logevent("featureFile_c", scenario.getName(), startts, endts);
+		 
+		  
+		  Region rlr = new Region(390,434,593,313);
+		  List<Match> r = rlr.findAnyList(imageList);
+		  System.out.println("Number of Items in Image Array: " + imageList.size());
+		  
+		  //r1.click(imageList, 1);
+		  
+		  int indexValue = 0;
+		  System.out.println(indexValue);
+		  System.out.println(imageList);
+		  //System.out.println(imageList.ArrayList(imageList));
+		  
+		  for (Match match : r) {
+			  	indexValue = match.getIndex();
+		  // System.out.println("you made it here..........");
+		  // System.out.println(indexValue);
+		  // screen.click(match);
+		   
+			  		if (indexValue >= 1) {
+		   System.out.println("true.................................................");
+		   screen.click(match);
+		   screen.wait("contactsummary.png", 10);
+		   screen.click("backButton.png", 0);
+		  }
+		  }
+		 
+    } catch (Exception e) {
+        date = new Date();
+        time = date.getTime();
+        endts = new Timestamp(time);
+        System.out.println("Event Status: Exception");        
+        System.out.println("Event End Time Stamp: " + endts);
+
+        
+    }
+		
+		 
+	/*	System.out.println("Scenario: " + scenario.getName());
+    	Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
+        	
+	*/
+
+    {}
+    /* @Given("^New contact navigation$")
     public void Navigate_newContact() throws Throwable {
     	Region r1 = new Region(767,290,309,202);
     	
@@ -169,7 +275,30 @@ public class DesktopSteps {
         screen.click("contacts.png", 0);
 		r1 .click("add.png");
 
-		//System.out.println(timeStamp);		//Timestamp
+		System.out.println("Scenario: " + scenario.getName());
+    	Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
+        
+        
+    	try {
+        	 	
+        		date= new Date();
+     		 	time = date.getTime();
+     		 	endts = new Timestamp(time);
+     		  //System.out.println("Event Status: " + scenario.getName());
+     		 	System.out.println("Event End Time Stamp: " + endts);
+     		 	logevent("featureFile_d", scenario.getName(), startts, endts);
+        	}
+        	catch(Exception e) {
+        		 System.out.println("Event Status: Exception");
+        		 date= new Date();
+        		 time = date.getTime();
+        		 endts = new Timestamp(time);
+        	   System.out.println("Event End Time Stamp: " + endts);
+        	}
 
 
     }
@@ -201,13 +330,38 @@ public class DesktopSteps {
         
         screen.click("nextbutton.png", 0);
         
-        //System.out.println(timeStamp);		//Timestamp
+        System.out.println("Scenario: " + scenario.getName());
+    	Date date= new Date();
+        long time = date.getTime();
+        Timestamp startts = new Timestamp(time);
+        Timestamp endts = null;
+        System.out.println("Event Start Time Stamp: " + startts);
+        
+        
+    	try {
+        	screen = new Screen();
+        	screen.wait("identifier.png", 10); 	
+        	date= new Date();
+     		 	time = date.getTime();
+     		 	endts = new Timestamp(time);
+     		  //System.out.println("Event Status: " + scenario.getName());
+     		 	System.out.println("Event End Time Stamp: " + endts);
+     		 	logevent("featureFile_e", scenario.getName(), startts, endts);
+        	}
+        	catch(Exception e) {
+        		 System.out.println("Event Status: Exception");
+        		 date= new Date();
+        		 time = date.getTime();
+        		 endts = new Timestamp(time);
+        	   System.out.println("Event End Time Stamp: " + endts);
+        	}
 
-      
 
-
-    }
-
-   
+    }*/
+	
+		  }  
+    
 }
+
+//}
 
